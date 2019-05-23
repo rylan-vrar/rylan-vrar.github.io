@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Rylan Daniels's Website</title>
+	<link rel="favicon" href="images/rylan_vr_profile_circle.png" /> <!--favicon-->
+</head>
+<style>
+	body{
+		text-align: center;
+		background-color: seashell;
+		font: bold 2em monospace;	<!--"em" refers to the size relation-->
+	}
+	.topnav{
+		width: 100%
+		background-color: dimgray;
+		overflow: hidden;
+	}
+	.topnav a{
+		float: right;
+		display: block;
+		text-align: center;
+		background-color: limegreen;
+		color: dimgray;
+	}
+	.topnav a:hover{
+		background-color: limegreen;
+		color: black;
+	}
+	.active{
+	  background-color: #4CAF50;
+	  color: white;
+	}
+	.topnav .icon {
+	  display: none;
+	}
+	a:link, a:visited{
+		background-color: cornflowerblue;
+		color: white;
+		padding: 10px 15px;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		transition: 0.25s;
+	}
+	a:hover{
+		background-color: steelblue;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	a:active{
+		background-color: white;
+		color: cornflowerblue;
+		box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+	}
+	#plain-link{
+		background-color: default;
+		color: default;
+		padding: default
+	}
+	.card{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		border-radius: 10px;
+		background-color: white;
+		transition: 0.25s;
+		box-align: center;
+		margin: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px;
+		width: 42em;
+		<!--overflow: auto;-->
+	}
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	.container {
+		padding: 2px 16px;
+	}
+	#circle{
+		width: 10%;
+		border-radius: 7em;
+		margin: auto;
+	}
+	#small-card{
+		width: 24em;
+	}
+	.subcard{
+		background-color: lightyellow;
+	}
+	img{
+		border-radius: 5px;
+	}
+	#caption{
+		font-style: italic;
+	}
+	
+
+</style>
+<body>
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class="topnav" id="myTopnav">
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	  <a href="#contact">Contact</a>
+	  <a href="#about">About</a>
+	  <a href="#projects">Projects</a>
+	  <a href="#home" class="active">Home</a>
+	</div>
+-->
+	<h1 id="title">Rylan Daniels</h1>
+
+	<div class="card" id="circle">
+	  <img src="images/rylan_vr_profile_circle.png" alt="Rylan Daniels" style="width: 100%">
+	  <div class="container">
+	  </div>
+	</div>
+
+	<p>Futurist, VR/AR Developer</p>
+
+	<a href="#projects">Check out my projects</a>
+
+	<h2 id="about">About Me</h2>
+	<p>I am a futurist, VR/AR Developer, and have a lot of cool projects which you can see below.</p>
+
+	<h2 id="projects">Projects</h2>
+
+	<div class="card">
+	  <img src="images/starcode-still.png" alt="Starcode" style="width: 100%">
+	  <div class="container">
+		<a href="https://testflight.apple.com/join/kNU0fVya" target="_blank"><h2><b>Starcode</b></h2></a>
+		<p id="caption">AR Escape Room</p> 
+
+		<left><div class="card subcard" id="small-card">
+		  <div class="container">
+			<h3><b>The Idea</b></h3> 
+			<h5>Development started with a storyboard that depicted each scene in the escape room. </h5> 
+		  </div>
+		</div></left>
+
+		<right><div class="card subcard" id="small-card">
+			<img src="images/starcode-dev.png" alt="Starcode" style="width: 100%">
+			<div class="container">
+				<h3><b>Process</b></h3> 
+				<h5>Development started with a storyboard that depicted each scene in the escape room. </h5> 
+			</div>
+		</div></right>
+
+		<right><div class="card subcard" id="small-card">
+			<iframe width="620" height="415"
+src="https://www.youtube.com/embed/d9eBxf0PQK4">
+</iframe>
+			<div class="container">
+				<h3><b>Starcode [Beta]</b></h3> 
+				<h5>Development started with a storyboard that depicted each scene in the escape room. </h5> 
+			</div>
+		</div></right>
+
+	  </div>
+	</div>
+
+	<div class="card" id="small-card">
+	  <img src="images/flymetothemoon-still.png" alt="Fly Me To The Moon" style="width: 100%">
+	  <div class="container">
+		<a id="plain-link" href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8ad1440e467341759ed049244d500f7d&metadata=01" target="_blank"><h2><b>Fly Me To The Moon</b></h2></a>
+		<p id="caption">Snapchat AR Lens</p> 
+	  </div>
+	</div>
+
+	<div class="card" id="small-card">
+	  <img src="images/frankenstein_sample_image.png" alt="Frankenstein AR 200" style="width: 100%">
+	  <div class="container">
+		<a id="plain-link" href="https://itunes.apple.com/us/app/frankenstein-ar-200/id1338680204?mt=8" target="_blank"><h2><b>Frankenstein AR 200</b></h2></a>
+		<p id="caption">AR Scavenger Hunt</p> 
+	  </div>
+	</div>
+
+	<a href="#title">Back to top</a>
+
+	<h5>Copyright &copy; 2019 Rylan Daniels. All Rights Reserved.
+
+</body>
+</html>
