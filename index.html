@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Rylan Daniels's Website</title>
+</head>
+<style>
+	body{
+		text-align: center;
+		background-color: seashell;
+		font: bold 2em monospace;	<!--"em" refers to the size relation-->
+	}
+	.topnav{
+		width: 100%
+		background-color: dimgray;
+		overflow: hidden;
+	}
+	.topnav a{
+		float: right;
+		display: block;
+		text-align: center;
+		background-color: limegreen;
+		color: dimgray;
+	}
+	.topnav a:hover{
+		background-color: limegreen;
+		color: black;
+	}
+	.active{
+	  background-color: #4CAF50;
+	  color: white;
+	}
+	.topnav .icon {
+	  display: none;
+	}
+	a:link, a:visited{
+		background-color: cornflowerblue;
+		color: white;
+		padding: 10px 15px;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		transition: 0.25s;
+	}
+	a:hover{
+		background-color: steelblue;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	a:active{
+		background-color: white;
+		color: cornflowerblue;
+		box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+	}
+	.card{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		border-radius: 10px;
+		background-color: white;
+		transition: 0.25s;
+		box-align: center;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-top: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		<!--width: 100%;-->
+	}
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	.container {
+		padding: 2px 16px;
+	}
+	#small-card{
+		width: 50%;
+	}
+	img{
+		border-radius: 5px;
+	}
+	#caption{
+		font-style: italic;
+	}
+	
+
+</style>
+<body>
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class="topnav" id="myTopnav">
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	  <a href="#contact">Contact</a>
+	  <a href="#about">About</a>
+	  <a href="#projects">Projects</a>
+	  <a href="#home" class="active">Home</a>
+	</div>
+-->
+	<h1 id="title">Rylan Daniels</h1>
+	<p>Futurist, VR/AR Developer</p>
+
+	<a href="#projects">Check out my projects</a>
+
+	<h2 id="about">About Me</h2>
+	<p>I am a futurist, VR/AR Developer, and have a lot of cool projects which you can see below.</p>
+
+	<h2 id="projects">Projects</h2>
+
+	<div class="card">
+	  <img src="images/starcode-still.png" alt="Starcode" style="width: 100%">
+	  <div class="container">
+		<h2><b>Starcode</b></h2> 
+		<p id="caption">AR Escape Room</p> 
+	  </div>
+	</div>
+
+	<div class="card" id="small-card">
+	  <div class="container">
+		<h3><b>The Idea</b></h3> 
+		<h5>Development started with a storyboard that depicted each scene in the escape room. </h5> 
+	  </div>
+	</div>
+	<div class="card" id="small-card">
+	  <div class="container">
+		<h3><b>Process</b></h3> 
+		<h5>Development started with a storyboard that depicted each scene in the escape room. </h5> 
+	  </div>
+	</div>
+
+	<div class="card" id="small-card">
+	  <img src="images/flymetothemoon-still.png" alt="Starcode" style="width: 58%">
+	  <div class="container">
+		<h2><b>Fly Me To The Moon</b></h2> 
+		<p id="caption">Snapchat AR Lens</p> 
+	  </div>
+	</div>
+
+	<a href="#title">Back to top</a>
+
+
+</body>
+</html>
